@@ -1,0 +1,9 @@
+picom -cC &
+nitrogen --restore &
+cbatticon &
+pasystray &
+nm-applet &
+blueman-applet &
+skypeforlinux &
+mailspring &
+tint2 &
