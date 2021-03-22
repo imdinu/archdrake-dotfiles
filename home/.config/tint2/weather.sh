@@ -1,0 +1,1 @@
+nm-online -q -t 600 && curl http://wttr.in/\?format\=1

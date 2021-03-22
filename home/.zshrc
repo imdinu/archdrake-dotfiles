@@ -71,15 +71,16 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 alias ll='ls -alF'
-alias 2monitor='source ~/utils/2monitor.sh'
-alias lxplus='ssh -i ~/.ssh/lxplus idinu@lxplus.cern.ch'
 
-source /opt/Xilinx/Vivado/2019.2/settings64.sh
 source $ZSH/oh-my-zsh.sh
 export PATH="${PATH}:/home/ioan/.local/bin"
-neofetch
 
-
+if [ "$TERM" = "xterm-termite" ]; then 
+    neofetch
+fi
+#export CUDA_PATH=/opt/cuda
+#export CUDA_ROOT=/opt/cuda/bin
+#export LD_LIBARAY_PATH=/opt/cuda/lib64
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"

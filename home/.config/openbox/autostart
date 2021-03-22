@@ -1,4 +1,4 @@
-picom -cC &
+picom --config ~/.config/picom.conf &
 nitrogen --restore &
 cbatticon &
 pasystray &
